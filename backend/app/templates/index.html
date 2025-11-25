@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Flask and AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<h1>DeepSeek</h1>
+<textarea id="deepseek_prompt">Explain BFS in one sentence.</textarea><br>
+<button id="deepseek_send">Ask</button>
+<pre id="deepseek_out"></pre>
+
+<h1>Llama2</h1>
+<textarea id="llama2_prompt">Explain BFS in one sentence.</textarea><br>
+<button id="llama2_send">Ask</button>
+<pre id="llama2_out"></pre>
+
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
