@@ -16,12 +16,7 @@ function Header() {
             <Link className="nav-link" to="/about">About</Link>
         </div>
         <div className="right-header">
-            <div className="signin-btn" onClick={() => setIsSignInOpen(!isSignInOpen)}>Sign in</div>
-            <div className={`signin-box ${isSignInOpen ? '' : 'hidden'}`}>
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <button>Login</button>
-            </div>
+            <Link className="nav-link" to="/login"><div className="signin-btn">Sign in</div></Link>
         </div> </header>;
     }
 export default Header;

@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import Start from './pages/Start';
 import Rules from './pages/Rules';
 import About from './pages/About';
+import Login from './pages/Login';
+import Passwordreset from './pages/Passwordreset';
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/start" element={<Start />} />
             <Route path="/rules" element={<Rules />} />
             <Route path="/about" element={<About />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/passwordreset" element={<Passwordreset />} />
           </Routes>
         </main>
 
