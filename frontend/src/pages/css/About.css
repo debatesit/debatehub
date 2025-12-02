@@ -1,0 +1,135 @@
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 130px);
+  background: linear-gradient(135deg, #fafafa, #ffefef);
+  text-align: center;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #b74b4b;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-subheading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #414141;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+
+.about-box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+
+.about-dropdown-header {
+  width: 100%;
+  background: #ffffff;
+  padding: 18px 20px;
+  border: none;
+  outline: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+
+
+.about-text {
+  font-size: 18px;
+  color: #414141;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
+
+
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+
+  box-sizing: border-box;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  flex-direction: column; 
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: #000 solid 1px;
+}
+
+
+.team-text {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+
+.team-name {
+  font-weight: 700;
+  color: #b72828;
+  margin-right: 8px;
+}
+
+.team-text a {
+  color: #b72828;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.team-text a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.team-role {
+  color: #555;
+  font-weight: 400;
+}
+
+.email-link, .about-link {
+  color: rgb(177, 1, 1); 
+}

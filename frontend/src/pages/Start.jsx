@@ -1,5 +1,5 @@
-import { useState } from "react";
 import './css/Start.css';
+import { useState } from "react";
 
 function Start() {
   const [rulesOpen, setRulesOpen] = useState(false);
@@ -9,7 +9,7 @@ function Start() {
     <main className="Start">
 
 
-      {rulesOpen && ( // Test code, rewrite, ol is TEMPORARY.
+      {rulesOpen && (
         <div className="popup-modal">
           <div className="popup-content">
             <h2>Game Rules</h2>
@@ -24,7 +24,7 @@ function Start() {
         </div>
       )}
 
-      {scoringOpen && ( // Test code, rewrite. 
+      {scoringOpen && ( 
         <div className="popup-modal">
           <div className="popup-content">
             <h2>Scoring System</h2>
@@ -43,13 +43,12 @@ function Start() {
       <div className="main-left">
         <h1 className="main-text">Join the Queue</h1>
         <h2 className="main-subtext">
-          Rise up.&nbsp; Persuade.&nbsp; Shape the outcome.
+          Rise up. Persuade. Shape the outcome.
         </h2>
       </div>
 
       <div className="main-right">
-        <div className="button-wrapper">
-
+        <div className="button-wrapper"> 
           <button className="join-button">Join Match</button>
 
           <div className="bottom-actions">
@@ -60,7 +59,7 @@ function Start() {
             </button>
 
             <button className="scoringbutton" onClick={() => setScoringOpen(true)}>
-              View Scores
+              View Scoring
             </button>
           </div>
 

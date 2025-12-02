@@ -3,8 +3,8 @@
     justify-content: center;          
     align-items: center;              
     min-height: calc(100vh - 130px);  
-    text-align: center;
-    background: linear-gradient(135deg, #fafafa, #ffefef);
+    text-align: center;  
+    background: linear-gradient(135deg, #fafafa, #ffdcdc);
 }
 
 .login-container {
