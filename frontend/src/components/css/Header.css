@@ -85,3 +85,22 @@
   color: #b74b4b;
   transform: translateY(-2px); 
 }
+
+.admin-link {
+  text-decoration: none;
+  color: #df1010;
+  font-weight: 600;
+  font-size: 19px;
+  transition: color 0.2s ease, transform 0.2s ease; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.admin-link:hover { 
+  color: #b40b0b;
+  transform: translateY(-2px);
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}

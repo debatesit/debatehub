@@ -6,21 +6,22 @@
   height: calc(100vh - 130px);
   padding: 80px 60px;
   box-sizing: border-box;
+  background: linear-gradient(135deg, #fafafa, #ffefef);
 }
 
 .popup-modal {
-  position: fixed;        /* stays on top of entire page */
+  position: fixed;      
   top: 0;
   left: 0;
-  width: 100vw;           /* full screen width */
-  height: 100vh;          /* full screen height */
-  background: rgba(0, 0, 0, 0.5); /* dim everything */
+  width: 100vw;          
+  height: 100vh;         
+  background: rgba(0, 0, 0, 0.5); 
   
-  display: flex;          /* centers content */
+  display: flex;          
   justify-content: center;
   align-items: center;
 
-  z-index: 999;           /* puts it above EVERYTHING */
+  z-index: 999;          
 }
 .popup-content {
   background: white;

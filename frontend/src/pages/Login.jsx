@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 function Login() {
     const navigate = useNavigate();
     const [isSignup, setIsSignup] = useState(false);
-
+    
     return (
         <main className="login-page">
             <div className="login-container">
@@ -48,7 +48,7 @@ function Login() {
                             required
                         />
                     )}
-
+                    
                     <button type="submit" className="login-button">
                         {isSignup ? "Create Account" : "Sign In"}
                     </button>
@@ -57,11 +57,10 @@ function Login() {
                 <div className="signup-link">
                     <Link className="nav-link" to="/passwordreset">Forgot Password?</Link>
 
-                    {/* Instead of a Link → toggle signup */}
-                    {!isSignup ? (
+                    {isSignup ? (
+                       <span className="nav-link" onClick={() => setIsSignup(false)}>Back to Login</span>
+                    ) : ( 
                         <span className="nav-link" onClick={() => setIsSignup(true)}>Sign Up</span>
-                    ) : (
-                        <span className="nav-link" onClick={() => setIsSignup(false)}>Back to Login</span>
                     )}
                 </div>
             </div>
