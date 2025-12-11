@@ -1,5 +1,5 @@
 
-.about-page {
+.aboutPage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.about-container {
+.aboutContainer {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -17,7 +17,7 @@
 }
 
 
-.about-title {
+.aboutTitle {
   font-size: 48px;
   font-weight: 800;
   color: #b74b4b;
@@ -25,7 +25,7 @@
   margin-bottom: 20px;
 }
 
-.about-subheading {
+.aboutSubheading {
   font-size: 24px;
   font-weight: 600;
   color: #414141;
@@ -34,7 +34,7 @@
 }
 
 
-.about-box {
+.aboutBox {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
@@ -47,7 +47,7 @@
 }
 
 
-.about-dropdown-header {
+.aboutDropdownHeader {
   width: 100%;
   background: #ffffff;
   padding: 18px 20px;
@@ -64,7 +64,7 @@
 }
 
 
-.about-text {
+.aboutText {
   font-size: 18px;
   color: #414141;
   line-height: 1.6;
@@ -84,7 +84,7 @@
   box-sizing: border-box;
 }
 
-.team-member {
+.teamMember {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -92,7 +92,7 @@
   flex-direction: column; 
 }
 
-.team-photo {
+.teamPhoto {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -101,35 +101,35 @@
 }
 
 
-.team-text {
+.teamText {
   margin: 0;
   font-size: 20px;
   color: #000;
   font-family: 'Inter', sans-serif;
 }
 
-.team-name {
+.teamName {
   font-weight: 700;
   color: #b72828;
   margin-right: 8px;
 }
 
-.team-text a {
+.teamText a {
   color: #b72828;
   text-decoration: none;
   font-weight: 700;
 }
 
-.team-text a:hover {
+.teamText a:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
-.team-role {
+.teamRole {
   color: #555;
   font-weight: 400;
 }
 
-.email-link, .about-link {
+.emailLink, .aboutLink {
   color: rgb(177, 1, 1); 
 }

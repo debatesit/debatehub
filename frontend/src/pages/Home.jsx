@@ -1,17 +1,17 @@
-import './css/Home.css'
+import styles from './css/Home.module.css'
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
 
   return (
-    <main className="home">
-      <div className="hero">
-        <h1 className="hero-title">DebateHub</h1>
-        <p className="hero-subtext">The #1 platform for thoughtful, ethical back-and-forth discussions.</p>
+    <main className={styles.home}>
+      <div className={styles.hero}>
+        <h1 className={styles.heroTitle}>DebateHub</h1>
+        <p className={styles.heroSubtext}>The #1 platform for thoughtful, ethical back-and-forth discussions.</p>
 
         <button 
-          className="hero-btn"
+          className={styles.heroBtn}
           onClick={() => navigate('/start')}
         >
           Speak Your Truth

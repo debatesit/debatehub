@@ -1,25 +1,35 @@
-import './css/Header.css';
-
+import styles from './css/Header.module.css'
+import defaultPhoto from "../assets/defaultPhoto.jpeg"
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Header() {
-    const [isSignInOpen, setIsSignInOpen] = useState(false);
-    let isAdmin = true; // Placeholder for admin check logic 
-    return <header className="site-header">
-        <div className="left-header">
-           <Link to="/" className="logo-link">
-                <div className="logo">DebateHub</div>
+    const [LoginWindow, setLoginWindow] = useState(false);
+    let isAdmin = false; // Placeholder for admin check logic 
+    let isLogged = false; // Placeholder for Login Logic
+    return <header className={styles.headerContainer}>
+        <div className={styles.leftHeader}>
+           <Link to="/" className={styles.logoLink}>
+                DebateHub
             </Link>
         </div>
-        <div className="mid-header">
-            <Link className="nav-link" to="/">Home</Link>
-            <Link className="nav-link" to="/start">Start</Link>
-            <Link className="nav-link" to="/about">About</Link>
-            {isAdmin && <Link className="admin-link" to="/admin">Admin</Link>}
+        <div className={styles.midHeader}>
+            <Link className={styles.navLink} to="/">Home</Link>
+            <Link className={styles.navLink} to="/start">Start</Link>
+            <Link className={styles.navLink} to="/about">About</Link>
+            {isAdmin && <Link className={styles.adminLink} to="/admin">Admin</Link>}
         </div>
-        <div className="right-header">
-            <Link className="nav-link" to="/login"><div className="signin-btn">Sign in</div></Link>
+        <div className={styles.rightHeader}>
+            {isLogged? (
+                <img src={defaultPhoto} className={styles.loginPhoto} onClick={()=>setLoginWindow(!LoginWindow)}/>
+            ) : ( 
+                <Link className={styles.navLink} to="/login"><div className={styles.signinButton}>Sign in</div></Link>
+            )}
+        {LoginWindow && isLogged &&
+            <div className={styles.loginContainer}>
+                <button className={styles.signOut}> Sign Out </button>
+            </div>
+        }   
         </div> </header>;
     }
 export default Header;
