@@ -1,4 +1,4 @@
-.site-footer {
+.sitefooter {
   text-align: center;
   background-color: #ffffff;      
   margin-top: 0;
@@ -9,17 +9,17 @@
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.site-footer p {
+.sitefooter p {
   margin: 0;
 }
 
-.site-footer a {
+.sitefooter a {
   color: #b74b4b;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
-.site-footer a:hover {
+.sitefooter a:hover {
   color: #913939;
 }

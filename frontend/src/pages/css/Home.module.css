@@ -14,7 +14,7 @@
   transform: translateY(-30px);
 }
 
-.hero-title {
+.heroTitle {
   font-size: 64px;
   font-weight: 800;
   color: #b74b4b;
@@ -22,7 +22,7 @@
   margin-bottom: 10px;
 }
 
-.hero-subtext {
+.heroSubtext {
   font-size: 20px;
   color: #414141;
   font-weight: 500;
@@ -30,7 +30,7 @@
   font-family: 'Inter', sans-serif;
 }
 
-.hero-btn {
+.heroBtn {
   background-color: #b74b4b;
   color: white;
   border: none;
@@ -42,7 +42,7 @@
   transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
-.hero-btn:hover {
+.heroBtn:hover {
   background-color: #913939;
   transform: translateY(-2px);
 }

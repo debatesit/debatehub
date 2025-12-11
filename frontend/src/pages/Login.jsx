@@ -1,22 +1,22 @@
-import './css/Login.css';
+import styles from './css/Login.module.css'
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-
+import testfunction from './js/Functions'
 function Login() {
     const navigate = useNavigate();
     const [isSignup, setIsSignup] = useState(false);
     
     return (
-        <main className="login-page">
-            <div className="login-container">
-                <h1 className="login-title">DebateHub</h1>
+        <main className={styles.loginPage}>
+            <div className={styles.loginContainer}>
+                <h1 className={styles.loginTitle}>DebateHub</h1>
 
-                <form className="login-form">
+                <form className={styles.loginForm}>
                     {/* Username */}
                     <input 
                         type="text" 
-                        className="login-input"
+                        className={styles.loginInput}
                         placeholder="Username"
                         required
                     />
@@ -25,7 +25,7 @@ function Login() {
                     {isSignup && (
                         <input 
                             type="email"
-                            className="login-input"
+                            className={styles.loginInput}
                             placeholder="Email Address"
                             required
                         />
@@ -34,7 +34,7 @@ function Login() {
                     {/* Password */}
                     <input
                         type="password"
-                        className="login-input"
+                        className={styles.loginInput}
                         placeholder="Password"
                         required
                     />
@@ -43,24 +43,24 @@ function Login() {
                     {isSignup && (
                         <input
                             type="password"
-                            className="login-input"
+                            className={styles.loginInput}
                             placeholder="Re-enter Password"
                             required
                         />
                     )}
                     
-                    <button type="submit" className="login-button">
+                    <button type="submit" className={styles.loginButton} onClick={() => testfunction()}>
                         {isSignup ? "Create Account" : "Sign In"}
                     </button>
                 </form>
 
-                <div className="signup-link">
-                    <Link className="nav-link" to="/passwordreset">Forgot Password?</Link>
+                <div className={styles.signupLink}>
+                    <Link className={styles.navLink} to="/passwordreset">Forgot Password?</Link>
 
                     {isSignup ? (
-                       <span className="nav-link" onClick={() => setIsSignup(false)}>Back to Login</span>
+                       <span className={styles.navLink} onClick={() => setIsSignup(false)}>Back to Login</span>
                     ) : ( 
-                        <span className="nav-link" onClick={() => setIsSignup(true)}>Sign Up</span>
+                        <span className={styles.navLink} onClick={() => setIsSignup(true)}>Sign Up</span>
                     )}
                 </div>
             </div>
