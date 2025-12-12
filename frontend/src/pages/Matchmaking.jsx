@@ -1,6 +1,10 @@
 import styles from "./css/Gameplay.module.css";
 import "./css/Gameplay.css";
 
+/* BACKEND IMPORTANT NOTE, Backend - Take note of the mesagecontainer in the top right."*/
+
+/* BACKEND IMPORTANT NOTE, Backend - You used global variables in Gameplay.module.css that effect the entire website, please contain. */
+
 function Matchmaking() {
 
     return (
