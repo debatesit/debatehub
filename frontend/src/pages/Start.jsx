@@ -1,11 +1,14 @@
 import styles from './css/Start.module.css';
 import testfunction from './js/Functions.js'
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 function Start() {
+  
+  const navigate = useNavigate();
   const [rulesOpen, setRulesOpen] = useState(false);
-
   const [scoringOpen, setScoringOpen] = useState(false);
+
   return (
     <main className={styles.Start}>
 
@@ -51,7 +54,7 @@ function Start() {
 
       <div className={styles.mainRight}>
         <div className={styles.buttonWrapper}> 
-          <button className={styles.joinButton} onClick={() => testfunction()}>Join Match</button>
+          <button className={styles.joinButton} onClick={() => navigate('/matchmaking')}>Join Match</button>
 
           <div className={styles.bottomActions}>
             <button
