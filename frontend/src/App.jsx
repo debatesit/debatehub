@@ -3,13 +3,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Start from './pages/Start';
-import Matchmaking from './pages/Matchmaking';
-import Debate from './pages/Debate';
-import End from './pages/End';
 import About from './pages/About';
-import Login from './pages/Login';
 import Admin from './pages/Admin';
-import Passwordreset from './pages/Passwordreset';
 import './App.css';
 
 function App() {
@@ -22,12 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/start" element={<Start />} />
-            <Route path="/matchmaking" element={<Matchmaking />} />
-            <Route path="/debate" element={<Debate />} />
-            <Route path="/end" element={<End />} />
             <Route path="/about" element={<About />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/passwordreset" element={<Passwordreset />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>

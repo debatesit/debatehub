@@ -54,7 +54,14 @@ function Start() {
 
       <div className={styles.mainRight}>
         <div className={styles.buttonWrapper}> 
-          <button className={styles.joinButton} onClick={() => navigate('/matchmaking')}>Join Match</button>
+          <button className={styles.joinButton}
+              onClick={() => {
+              window.location.href = "/matchmaking.html";
+              }}
+          >
+          Join Match
+          </button>
+
 
           <div className={styles.bottomActions}>
             <button
