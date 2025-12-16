@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 function Start() {
-  
+
   const navigate = useNavigate();
   const [rulesOpen, setRulesOpen] = useState(false);
   const [scoringOpen, setScoringOpen] = useState(false);
@@ -17,7 +17,7 @@ function Start() {
         <div className={styles.popupModal}>
           <div className={styles.popupContent}>
             <h2 className={styles.popupTitle}>Game Rules</h2>
-            <ol> 
+            <ol>
               <li>No plagiarism — quotes allowed but must be credited.</li>
               <li>No personal attacks or hate speech toward any participant or group.</li>
               <li>Stay on topic and argue the ideas, not the person.</li>
@@ -30,7 +30,7 @@ function Start() {
         </div>
       )}
 
-      {scoringOpen && ( 
+      {scoringOpen && (
         <div className={styles.popupModal}>
           <div className={styles.popupContent}>
             <h2 className={styles.popupTitle}>Scoring System</h2>
@@ -39,7 +39,7 @@ function Start() {
               <li>Point 2: Bonus points for creativity.</li>
               <li>Point 3: Deductions for rule violations.</li>
             </ul>
-          <button className={styles.popupButton} onClick={() => setScoringOpen(false)}>Close</button>
+            <button className={styles.popupButton} onClick={() => setScoringOpen(false)}>Close</button>
           </div>
         </div>
       )}
@@ -53,8 +53,8 @@ function Start() {
       </div>
 
       <div className={styles.mainRight}>
-        <div className={styles.buttonWrapper}> 
-          <button className={styles.joinButton} onClick={() => navigate('/matchmaking')}>Join Match</button>
+        <div className={styles.buttonWrapper}>
+          <button className={styles.joinButton} onClick={() => navigate('/debate')}>Start Pass and Play Match</button>
 
           <div className={styles.bottomActions}>
             <button

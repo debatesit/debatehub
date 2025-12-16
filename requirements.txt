@@ -1,2 +1,7 @@
 torch
 datasets
+flask
+flask-cors
+gunicorn
+dotenv
+requests
